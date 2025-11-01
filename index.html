@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,inicial-scale=1">
+    <title>Demonstrativo Analítico - PCG</title>
+
+    <!-- Estilos, Fontes & Ícones -->
+     <link rel="stylesheet" href="assets/styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+    </head>
+    <body>
+      
+        <!-- Header + Navbar + Dropdown -->
+        <header class="header">
+          <div class="brand">
+            <img src="assets/imgs/Logo_01.png" alt="logo_01">
+            <button class="menu-toggle" aria-label="Abrir menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav" aria-label="principal">
+              <div class="nav-item">
+                <a href="https://unisantos.br" target="_blank">Universidade</a>
+              </div>
+              <div class="nav-item">Tema<i class="fa-solid fa-chevron-down chev"></i>
+              <div class="dropdown" role="menu">
+                <a href="#">Bibliotecas</a>
+                <a href="#">Análise de Dados</a>
+                <a href="#">Mineração de Dados</a>
+                <a href="#">Heurísticas</a>
+                <a href="#">eMAG</a>
+              </div>
+            </div>
+            <div class="nav-item" tabindex="0">Compartilhar <i class="fa-solid fa-chevron-down chev"></i>
+              <div class="dropdown">
+                <a class="share-item" href="#" id="share-email"><i class="fa-solid fa-envelope"></i> Via E-mail</a>
+                <a class="share-item" href="#" id="share-wpp"><i class="fa-brands fa-whatsapp"></i> Via WhatsApp</a>
+              </div>
+            </div>
+            <div class="nav-item" tabindex="0">Personalizar<i class="fa-solid fa-chevron-down chev"></i>
+              <div class="dropdown">
+                <a class="share-item" href="#" id="returnNormal"><i class="fa-solid fa-arrow-right"></i> Modo Padrão</a>
+                <a class="share-item" href="#" id="activateDyslexia"><i class="fa-solid fa-arrow-right"></i> Modo Dislexia</a>
+              </div>
+            </div>
+            </nav>
+          </div>
+
+          <div class="controls top-right">
+            <a class="btn" href="https://archive.ics.uci.edu/dataset/186/wine+quality" download><i class="fa-solid fa-arrow-right"></i> Dataset</a>
+            <a class="ghost" href="PCG.pdf" download><i class="fa-solid fa-file-pdf"></i> Download do Trabalho</a>
+            </div>
+          </div>
+        </header>
+        
+        <!-- Introdução -->
+        <main class="container">
+          <section class="hero">
+            <div class="hero-left">
+              <div class="intro">
+                <h3>Trabalho: Demonstrativo Analítico dos Parâmetros; Qualidade do Vinho Tinto</h3>
+                <p class="paragraph">O vinho é uma bebida milenar, citada, inclusive, nas Sagradas Escrituras e liturgia
+católicas, sendo o fruto do trabalho do homem que traz júbilo e gozo para os que ingerem. 
+Há uma profissão chamada sommelier de vinho, cuja atribuição é determinar a qualidade de tal.
+Sendo assim, o grupo escolheu esse tema por sua relevância histórica, profissional e por ser
+uma bebida muito apreciada por alguns integrantes do grupo.</p>
+<p class="paragraph">A qualidade do vinho é tradicionalmente avaliada por especialistas por meio de testes
+sensoriais, que podem ser subjetivos e inconsistentes. Este trabalho explora uma abordagem
+baseada em mineração de dados para prever a qualidade do vinho a partir de propriedades físicoquímicas mensuráveis, u
+tilizando um conjunto de dados de vinhos portugueses "vinho verde".
+O estudo se baseia no artigo "Modeling wine preferences by data mining from physicochemical
+properties" (Cortez, Paulo et al., 2009), que aplica técnicas como Support Vector Machines
+(SVM), redes neurais e regressão múltipla para modelar preferências sensoriais.</p>
+<p class="paragraph">A relevância deste tema está na aplicação de técnicas computacionais para otimizar
+processos na indústria vinícola, desde a produção até a certificação, reduzindo a dependência
+de avaliações humanas e identificando fatores críticos para a qualidade.
+Para além da análise de dados sobre a qualidade do vinho, que constitui o foco central
+desta pesquisa, o presente trabalho também se dedica a uma avaliação da plataforma digital de
+origem do dataset. Esta análise secundária foi conduzida com o objetivo de examinar a interface
+e a experiência do usuário do website. Para isso, foram aplicadas as 10 Heurísticas de
+Usabilidade de Jakob Nielsen, e, adicionalmente, foram realizados testes de acessibilidade com
+base nas diretrizes do eMAG (Modelo de Acessibilidade em Governo Eletrônico).</p>
+                <button class="btn-more" id="open-intro">Continue lendo</button>
+              </div>
+            </div>
+            
+            <!-- Importação do código (vinho) -->
+            <aside class="hero-right">
+              <div class="import-box" id="importCode">
+                <i class="fa-brands fa-python"></i><span>Importar código</span>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <strong>Palavras chaves:</strong>
+                </div>
+                
+                <!-- Tags (Palavras-chaves) -->
+                <div class="tags">
+                  <div class="tag">Análise de Dados</div>
+                  <div class="tag">Mineração de Dados</div>
+                  <div class="tag">Outliers</div>
+                  <div class="tag">Heurísticas</div>
+                  <div class="tag">Acessibilidade</div>
+                </div>
+              </div>
+
+              <!-- Autores do Trabalho -->
+              <div class="authors">
+                <strong>Autores do trabalho:</strong>
+                <p>Alunos: Fabrizio Jacinto, Gabriel Conrado, Samuel Meneses e Thiago Coutinho.</p>
+              </div>
+
+              <div class="popup-overlay" id="intro-popup">
+                <div class="popup-box">
+                  <p class="paragraph">Você pode clicar <a href="PCG.pdf">aqui</a> para visualizar <strong>de forma completa por PDF</strong> ou conferir breves trechos sobre cada tema abordado em nosso trabalho através da barra de navegação principal do site!</p>
+                  <button id="close-intro">Fechar</button>
+                </div>
+              </div>
+
+            </aside>
+          </section>
+        </main>
+
+        <!-- Popup -->
+        <div class="popup-overlay" id="popup">
+          <div class="popup-box">
+            <h2 id="popup-title">Título</h2>
+            <p id="popup-text">Conteúdo</p>
+            <button id="close-popup">Fechar</button>
+          </div>
+        </div>
+        
+        <footer class="footer">
+          <p class></p>
+          Projeto Curricular de Graduação (PCG)
+        </footer>
+        <div class="toast" id="toast">Copiado para a área de transferência!</div>
+
+        <!-- Solicitar os scripts -->
+         <!-- 04 Eventos -->
+         <script src="assets/script.js"></script>
+         <!-- Script de Compartilhamento -->
+         <script>
+          document.getElementById("share-email").addEventListener("click", (e) => {
+            e.preventDefault();
+            const subject = encodeURIComponent('Compartilhar: Demonstrativo Analítico (PCG)');
+            const body = encodeURIComponent('Segue o PCG:');
+            window.location.href = `mailto:?subject=${subject}&body=${body}`;
+          });
+
+          document.getElementById('share-wpp').addEventListener('click',(e)=>{
+            e.preventDefault();
+            const text = encodeURIComponent('Segue o PCG:');
+            window.open('https://wa.me/?text='+text,'_blank');
+          });
+
+          //Script de Modo Padrão e Modo Dislexia
+          const activateDyslexia = document.getElementById("activateDyslexia");
+          const returnNormal = document.getElementById("returnNormal");
+
+          if (activateDyslexia) {
+            activateDyslexia.addEventListener("click", (e) => {
+              e.preventDefault();
+              document.body.classList.add("dyslexia-mode");
+            });
+          }
+
+          if (returnNormal) {
+            returnNormal.addEventListener("click", (e) => {
+              e.preventDefault();
+              document.body.classList.remove("dyslexia-mode");
+            });
+          }
+          //Script de Barra de Navegação Mobile
+          const toggle = document.querySelector('.menu-toggle');
+          const nav = document.querySelector('.nav');
+          
+          if (toggle && nav) {
+          toggle.addEventListener('click', () => {
+          nav.classList.toggle('active');
+          });
+        }
+         </script>
+         <!-- Script do V-Libras -->
+         <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+         </div>
+         <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+         <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+         </script>
+      </body>
+  </head>
+</html>
