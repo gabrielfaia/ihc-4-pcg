@@ -5,7 +5,7 @@ Este site é uma prévia do Projeto Curricular de Graduação, desenvolvido para
 ## Integrantes
 - Fabrizio Jacinto
 - Gabriel Conrado
-- Samuel Menezes
+- Samuel Meneses
 - Thiago Coutinho
 
 ## Professores
